@@ -17,3 +17,15 @@ Now with optional **bitcoin payments** for swapping coupons.
 ---
 
 ## 🏗️ Architecture Overview
+
+---
+
+## 🤝 Contributing
+We welcome contributions from developers, designers, and Bitcoin enthusiasts!  
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to get started.  
+
+---
+
+## 📜 License
+This project is licensed under the [MIT License](LICENSE).  
+You’re free to use, modify, and share PlumSwap — see the license file for details.
