@@ -11,8 +11,8 @@ Now with optional **bitcoin payments** for swapping coupons.
 - 🔒 **Private & secure**: No central server, encrypted peer-to-peer exchange  
 - 🌍 **Cross-platform**: Works on Android, iOS, Linux, Windows, and macOS  
 - 📦 **Offline-first**: Coupons stored locally, with optional encrypted backup  
-- ⚡ **Decentralized**: Powered by P2P protocols like libp2p/WebRTC and IPFS  
-- 💱 **Bitcoin Integration**: Swap coupons for Bitcoin via on-chain or Lightning payments  
+- ⚡ **Decentralized**: Powered by bitcoin, lightning, and P2P protocols like libp2p/WebRTC, IPFS.  
+- 💱 **Bitcoin Integration**: Swap coupons for bitcoin via on-chain or lightning payments  
 
 ---
 
