@@ -2,7 +2,7 @@
 
 **PlumSwap** is a free and open-source, peer-to-peer platform for scanning, storing, and exchanging coupons without central servers or databases.  
 Users fully own their data, share directly with others, and support multiple coupon formats including **QR codes, barcodes, alphanumeric codes, and images**.  
-Now with optional **Bitcoin payments** for swapping coupons.
+Now with optional **bitcoin payments** for swapping coupons.
 
 ---
 
