@@ -1,7 +1,7 @@
-# 🍑 PlumSwap – Open Source P2P Coupon Exchange
+# 🍑 PlumSwap – Peer-to-peer platform for storing, organizing, and swaping discounts, credits, and other deals.
 
-**PlumSwap** is a free and open-source, peer-to-peer platform for scanning, storing, and exchanging coupons without central servers or databases.  
-Users fully own their data, share directly with others, and support multiple coupon formats including **QR codes, barcodes, alphanumeric codes, and images**.  
+**PlumSwap** is a free and open-source, peer-to-peer platform for scanning, storing, and exchanging discount/credit coupons.  
+Users own their data, share directly with others, and support multiple coupon formats including **QR codes, barcodes, alphanumeric codes, and images**.  
 Now with optional **bitcoin payments** for swapping coupons.
 
 ---
