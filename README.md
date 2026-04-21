@@ -23,21 +23,12 @@ Now with optional **bitcoin and lightning payments** for swapping coupons.
 
   Stack
 
-  ┌───────────┬──────────────────────────────────────────────────────────────────────┐
-  │   Layer   │                              Technology                              │
-  ├───────────┼──────────────────────────────────────────────────────────────────────┤
-  │ Backend   │ Python / FastAPI                                                     │
-  ├───────────┼──────────────────────────────────────────────────────────────────────┤
-  │ Database  │ SQLite via SQLAlchemy ORM (swap-ready for PostgreSQL)                │
-  ├───────────┼──────────────────────────────────────────────────────────────────────┤
-  │ Frontend  │ Single-page vanilla HTML/CSS/JS PWA                                  │
-  ├───────────┼──────────────────────────────────────────────────────────────────────┤
-  │ Auth      │ ed25519 keypair (client-side) + signature verification (server-side) │
-  ├───────────┼──────────────────────────────────────────────────────────────────────┤
-  │ Real-time │ WebSocket signaling server (WebRTC-ready)                            │
-  ├───────────┼──────────────────────────────────────────────────────────────────────┤
-  │ Port      │ 8002                                                                 │
-  └───────────┴──────────────────────────────────────────────────────────────────────┘
+  - Backend: Python / FastAPI
+  - Database: SQLite via SQLAlchemy ORM (swap-ready for PostgreSQL)
+  - Frontend: Single-page vanilla HTML/CSS/JS PWA
+  - Auth: ed25519 keypair (client-side) + signature verification (server-side)
+  - Real-time: WebSocket signaling server (WebRTC-ready)
+  - Port: 8002
 
   Identity & Security
 
@@ -48,21 +39,12 @@ Now with optional **bitcoin and lightning payments** for swapping coupons.
 
   API Structure (/api/v1)
 
-  ┌──────────────────────┬─────────────────────────────────────────┬───────────────────────────────────────────────────────────────┐
-  │        Route         │                Endpoints                │                            Purpose                            │
-  ├──────────────────────┼─────────────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-  │ /peers               │ POST, GET /:id, GET /:id/ratings        │ Peer registration, profiles, reputation                       │
-  ├──────────────────────┼─────────────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-  │ /listings            │ GET, POST, PUT /:id, DELETE /:id        │ Coupon listing CRUD with search/filter                        │
-  ├──────────────────────┼─────────────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-  │ /exchanges           │ GET, POST, PUT /:id, POST /:id/complete │ Exchange workflow (request → accept/reject → complete + rate) │
-  ├──────────────────────┼─────────────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-  │ /ws/signal/{peer_id} │ WebSocket                               │ Real-time signaling for peer discovery                        │
-  ├──────────────────────┼─────────────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-  │ /signal/online       │ GET                                     │ Online peer count                                             │
-  ├──────────────────────┼─────────────────────────────────────────┼───────────────────────────────────────────────────────────────┤
-  │ /config              │ GET                                     │ App constants (categories, formats, countries, ICE servers)   │
-  └──────────────────────┴─────────────────────────────────────────┴───────────────────────────────────────────────────────────────┘
+  - /peers — POST, GET /:id, GET /:id/ratings — Peer registration, profiles, reputation
+  - /listings — GET, POST, PUT /:id, DELETE /:id — Coupon listing CRUD with search/filter
+  - /exchanges — GET, POST, PUT /:id, POST /:id/complete — Exchange workflow (request → accept/reject → complete + rate)
+  - /ws/signal/{peer_id} — WebSocket — Real-time signaling for peer discovery
+  - /signal/online — GET — Online peer count
+  - /config — GET — App constants (categories, formats, countries, ICE servers)
 
   Data Model
 
